@@ -1,5 +1,5 @@
 package trabajofin;
 
 public interface Funciones {
-    abstract void verificarEstado();
+    public abstract void verificarEstado();
 }

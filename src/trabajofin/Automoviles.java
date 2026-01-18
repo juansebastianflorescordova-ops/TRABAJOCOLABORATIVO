@@ -20,13 +20,14 @@ public class Automoviles {
     }
 
     //método para ingresar datos del vehículo
-        public void ingresarDatosAutomovil(){
-            Scanner sc;
-            sc = new Scanner(System.in);
-            System.out.print("Ingrese la marca del vehículo: ");
-            marca = sc.nextLine();
-            System.out.print("Ingrese el precio del vehículo: ");
-            precio = sc.nextInt();
+    public void ingresarDatosAutomovil(){
+        Scanner sc;
+        sc = new Scanner(System.in);
+        System.out.print("Ingrese la marca del vehículo: ");
+        marca = sc.nextLine();
+        System.out.print("Ingrese el precio del vehículo: ");
+        precio = sc.nextInt();  
+        sc.close() ;
     }
 
 }

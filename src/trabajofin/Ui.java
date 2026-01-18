@@ -34,4 +34,20 @@ public class Ui {
         System.out.println("El total a pagar es: " + total);
     }
 
+    public void mostrarEstadoVehiculo(Automoviles[] productos) {
+        int i; 
+        Funciones func[];
+        func = new Funciones[productos.length];
+
+        for (i = 0; i < productos.length; i++) {
+
+         func[i] = (Funciones) productos[i];
+         func[i].verificarEstado();
+        }
+
+ 
+
+    }
+
+    
 }
