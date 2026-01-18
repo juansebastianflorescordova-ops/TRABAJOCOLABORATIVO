@@ -12,9 +12,19 @@ public class Core {
             n = sc.nextInt();
         } while(n<min || n>max);
         return n;
-    }   
-    public void ingresarDatosVehiculo(){
+    }
+
+    public int ingValor(byte min, byte max, String mensaje){
+        Scanner sc;
+        sc = new Scanner(System.in);
+        int n;
+        n = 0;
         
+        do{
+            System.out.println(mensaje + " (" + min + " y " + max + ")");
+            n = sc.nextInt();
+        } while(n<min && n>max);
+        return n;
     }
 
     public Automoviles[] ingresarProductos(int cantidad){
@@ -28,24 +38,24 @@ public class Core {
             switch(tipo){
                 case 1:
                     productos[i] = new Auto();
-                    productos[i].ingresarDatosVehiculo();
+                    productos[i].ingresarDatosAutomovil();
                     break;
                 case 2:
                     productos[i] = new Moto();
-                    productos[i].ingresarDatosVehiculo();
+                    productos[i].ingresarDatosAutomovil();
                     break;
                 case 3:
                     productos[i] = new Bicicleta();
-                    productos[i].ingresarDatosVehiculo();
+                    productos[i].ingresarDatosAutomovil();
                     break;
             }
         }
         return productos;
     }
-    int calcularTotalPagar(Automoviles[] prod){
-        int contador;
+    public int calcularTotalPagar(Automoviles[] prod){
+        int contador,i;
         contador = 0;
-        for(int i = 0; i<prod.lenght; i++){
+        for(i = 0; i<prod.length; i++){
             contador = prod[i].precio + contador;
         }
         return contador;
