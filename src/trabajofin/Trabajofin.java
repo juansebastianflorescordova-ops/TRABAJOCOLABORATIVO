@@ -10,7 +10,7 @@ public class Trabajofin {
         rs = new Core();
         ap.imprimirDatosTienda();
         cantidad= rs.ingresarCantComprar(1,10,"ingrese la cantidad de productos a comprar entre");
-        productos=new vehiculos[cantidad];
+        productos=new Automoviles[cantidad];
         productos=rs.ingresarProdutos(cantidad);
         total = rs.calcularTotalPagar(productos);
         ap.mostrarTotalPagar(total, productos);
