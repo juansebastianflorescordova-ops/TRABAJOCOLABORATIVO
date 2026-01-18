@@ -12,6 +12,7 @@ public class Core {
             n = sc.nextInt();
         } while(n<min || n>max);
         return n;
+        
     }
 
     public int ingValor(byte min, byte max, String mensaje){
@@ -74,11 +75,16 @@ public class Core {
            }
 
         } while(n<min);
-
-        if(n>total){
-            System.out.print("El dinero ingresado es mayor al total a pagar, ingrese nuevamente: ");
-            n = sc.nextInt();
-        }
         return n;
+    }
+
+    public void calcularDiferencia(int total, int pagar){
+        int diferencia;
+        diferencia = pagar - total;
+        if(diferencia>0){
+            System.out.println("Su cambio es: " + diferencia);
+        } else {
+            System.out.println("Gracias por su compra");
+        }
     }
 }
