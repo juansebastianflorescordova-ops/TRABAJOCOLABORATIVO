@@ -1,23 +1,21 @@
 package trabajofin;
 
 public class Moto extends Automoviles implements Funciones {
-    String marca;
-    int precio;
-    
+
     
     @Override
     public void setMarca(String marca){
-        marca = this.marca;
+        marca = super.marca;
 
     }
     public void setPrecio(int precio){
         precio = this.precio;
     }
-    public void getMarca(){
-
+    public String getMarca(){
+        return marca;
     }
-    public void getPrecio(){
-
+    public int getPrecio(){
+        return precio;
     }
     public void verificarEstado(){
         System.out.println("La moto encendio de manera correcta");
