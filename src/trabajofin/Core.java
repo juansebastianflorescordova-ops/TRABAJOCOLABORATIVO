@@ -3,7 +3,7 @@ package trabajofin;
 import java.util.Scanner;
 
 public class Core {
-    public int ingValor(byte min, byte max, String mensaje){
+    public int ingresarCantComprar(byte min, byte max, String mensaje){
         int n;
         Scanner sc;
         sc = new Scanner(System.in);
@@ -13,8 +13,11 @@ public class Core {
         } while(n<min || n>max);
         return n;
     }   
+    public void ingresarDatosVehiculo(){
+        
+    }
 
-    public Automoviles[] ingresarProdutos(int cantidad){
+    public Automoviles[] ingresarProductos(int cantidad){
         Automoviles productos[];
         Core rs;
         rs = new Core();
@@ -38,5 +41,13 @@ public class Core {
             }
         }
         return productos;
+    }
+    int calcularTotalPagar(Automoviles[] prod){
+        int contador;
+        contador = 0;
+        for(int i = 0; i<prod.lenght; i++){
+            contador = prod[i].precio + contador;
+        }
+        return contador;
     }
 }

@@ -1,5 +1,6 @@
 package trabajofin;
 
 public class Automoviles {
-    String marca, precio;
+    String marca;
+    int precio;
 }
