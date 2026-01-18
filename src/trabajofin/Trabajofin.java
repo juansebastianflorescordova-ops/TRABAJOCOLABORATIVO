@@ -11,7 +11,7 @@ public class Trabajofin {
         ap.imprimirDatosTienda();
         cantidad= rs.ingresarCantComprar(1,10,"ingrese la cantidad de productos a comprar entre");
         productos=new Automoviles[cantidad];
-        productos=rs.ingresarProdutos(cantidad);
+        productos=rs.ingresarProductos(cantidad);
         total = rs.calcularTotalPagar(productos);
         ap.mostrarTotalPagar(total, productos);
         pagar = rs.ingresarDineroPagar(0,total,"ingresar dinero a pagar");

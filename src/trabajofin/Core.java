@@ -28,12 +28,13 @@ public class Core {
     }
 
     public Automoviles[] ingresarProductos(int cantidad){
+        int tipo;
         Automoviles productos[];
         Core rs;
         rs = new Core();
         productos = new Automoviles[cantidad];
         for(int i=0;i<cantidad;i++){
-            int tipo;
+            
             tipo = rs.ingValor((byte)1,(byte)3,"ingrese el tipo de vehiculo a comprar: 1.Auto 2.Moto 3.Bicicleta");
             switch(tipo){
                 case 1:
