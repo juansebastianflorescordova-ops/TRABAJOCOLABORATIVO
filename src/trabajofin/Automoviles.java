@@ -26,7 +26,7 @@ public class Automoviles {
             System.out.print("Ingrese la marca del vehículo: ");
             marca = sc.nextLine();
             System.out.print("Ingrese el precio del vehículo: ");
-            precio = sc.nextInt();  
+            precio = sc.nextInt();
     }
 
 }

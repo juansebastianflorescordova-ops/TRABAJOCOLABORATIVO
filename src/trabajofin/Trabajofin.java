@@ -4,7 +4,7 @@ public class Trabajofin {
     public static void main(String[] args) {
         int cantidad,total,pagar;
         Automoviles[] productos;
-        Ui ap ; 
+        Ui ap ;
         ap = new Ui();
         Core rs;
         rs = new Core();
@@ -15,6 +15,6 @@ public class Trabajofin {
         total = rs.calcularTotalPagar(productos);
         ap.mostrarTotalPagar(total, productos);
         pagar = rs.ingresarDineroPagar(0,total,"ingresar dinero a pagar");
-        ap.mostrarEstadoVehiculo(productos); 
+        ap.mostrarEstadoVehiculo(productos);
     }
 }
