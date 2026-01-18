@@ -6,7 +6,7 @@ public class Ui {
 
 
 
-
+    //Se creo el metodo imprimirDatosTienda por ser necesario para la presentacion 
     public void imprimirDatosTienda() {
         System.out.println("          ════════════════════════════════════════════════════════════");
         System.out.println("                           TIENDA DE VEHÍCULOS                      ");
@@ -23,6 +23,7 @@ public class Ui {
 
     }
 
+    //Se creo el metodo que calcula el total a pagar usando un arreglo de tipo automoviles
     public void mostrarTotalPagar(int total,Automoviles[] productos) {
         int i; 
 
