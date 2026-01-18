@@ -25,7 +25,7 @@ public class Automoviles {
         sc = new Scanner(System.in);
         System.out.print("Ingrese la marca del vehículo: ");
         marca = sc.nextLine();
-        System.out.print("Ingrese el precio del vehículo: ");
+        System.out.print("Ingrese el precio del vehículo(Vendedor): ");
         precio = sc.nextInt();  
     }
 

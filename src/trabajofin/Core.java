@@ -16,15 +16,14 @@ public class Core {
     }
 
     public int ingValor(byte min, byte max, String mensaje){
-        Scanner sc;
-        sc = new Scanner(System.in);
+        Scanner x = new Scanner(System.in);
         
         int n;
         n = 0;
         
         do{
             System.out.println(mensaje + " (" + min + " y " + max + ")");
-            n = sc.nextInt();
+            n = x.nextInt();
         } while(n<min && n>max);
         return n;
     }
@@ -63,19 +62,19 @@ public class Core {
         }
         return contador;
     }
-    public int ingresarDineroPagar(int min,int total, String mensaje){
+    public int ingresarDineroPagar(int total, String mensaje){
         int n;
-        Scanner sc;
-        sc = new Scanner(System.in);
+        Scanner y;
+        y = new Scanner(System.in);
         System.out.print(mensaje);
-        n = sc.nextInt();
+        n = y.nextInt();
         do{
-           if(n<min){
+           if(n<total){
                System.out.print("El dinero ingresado es insuficiente, ingrese nuevamente: ");
-               n = sc.nextInt();
+               n = y.nextInt();
            }
 
-        } while(n<min);
+        } while(n<total);
         return n;
     }
 

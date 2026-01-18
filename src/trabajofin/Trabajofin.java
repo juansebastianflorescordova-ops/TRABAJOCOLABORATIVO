@@ -14,7 +14,7 @@ public class Trabajofin {
         productos=rs.ingresarProductos(cantidad);
         total = rs.calcularTotalPagar(productos);
         ap.mostrarTotalPagar(total, productos);
-        pagar = rs.ingresarDineroPagar(0,total,"ingresar dinero a pagar");
+        pagar = rs.ingresarDineroPagar(total,"ingresar dinero a pagar");
         rs.calcularDiferencia(total, pagar);
         ap.mostrarEstadoVehiculo(productos); 
     }

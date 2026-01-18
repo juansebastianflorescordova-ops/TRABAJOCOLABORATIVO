@@ -26,12 +26,13 @@ public class Ui {
     //Se creo el metodo que calcula el total a pagar usando un arreglo de tipo automoviles
     public void mostrarTotalPagar(int total,Automoviles[] productos) {
         int i; 
-
+        System.out.println("════════════════════════════════════════════════════════════");
         for(i=0; i<productos.length; i++) {
-            System.out.println(productos[i].getMarca() + " " + productos[i].getPrecio());
+            System.out.println("El " + productos[i].getMarca() + " tiene por precio " + productos[i].getPrecio());
 
         }
         System.out.println("El total a pagar es: " + total);
+        System.out.println("════════════════════════════════════════════════════════════");
     }
 
     public void mostrarEstadoVehiculo(Automoviles[] productos) {
