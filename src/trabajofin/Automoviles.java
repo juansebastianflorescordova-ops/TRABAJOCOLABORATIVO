@@ -4,7 +4,7 @@ public class Automoviles {
     String marca;
     int precio;
 
-
+        // Setters y Getters
     public void setMarca(String marca){
         this.marca = marca;
     }
