@@ -1,5 +1,5 @@
 package trabajofin;
-
+import java.util.Scanner;
 public class Automoviles {
     String marca;
     int precio;
@@ -18,4 +18,16 @@ public class Automoviles {
     public int getPrecio(){
         return precio;
     }
+
+    //método para ingresar datos del vehículo
+        public void ingresarDatosVehiculo(){
+            Scanner sc;
+            sc = new Scanner(System.in);
+            System.out.print("Ingrese la marca del vehículo: ");
+            marca = sc.nextLine();
+            System.out.print("Ingrese el precio del vehículo: ");
+            precio = sc.nextInt();  
+
+    }
+
 }

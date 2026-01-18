@@ -13,9 +13,6 @@ public class Core {
         } while(n<min || n>max);
         return n;
     }   
-    public void ingresarDatosVehiculo(){
-        
-    }
 
     public Automoviles[] ingresarProductos(int cantidad){
         Automoviles productos[];
