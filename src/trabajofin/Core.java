@@ -3,7 +3,7 @@ package trabajofin;
 import java.util.Scanner;
 
 public class Core {
-    public int ingresarCantComprar(byte min, byte max, String mensaje){
+    public int ingresarCantComprar(int min, int max, String mensaje){
         int n;
         Scanner sc;
         sc = new Scanner(System.in);
@@ -59,5 +59,25 @@ public class Core {
             contador = prod[i].precio + contador;
         }
         return contador;
+    }
+    public int ingresarDineroPagar(int min,int total, String mensaje){
+        int n;
+        Scanner sc;
+        sc = new Scanner(System.in);
+        System.out.print(mensaje);
+        n = sc.nextInt();
+        do{
+           if(n<min){
+               System.out.print("El dinero ingresado es insuficiente, ingrese nuevamente: ");
+               n = sc.nextInt();
+           }
+
+        } while(n<min);
+
+        if(n>total){
+            System.out.print("El dinero ingresado es mayor al total a pagar, ingrese nuevamente: ");
+            n = sc.nextInt();
+        }
+        return n;
     }
 }
