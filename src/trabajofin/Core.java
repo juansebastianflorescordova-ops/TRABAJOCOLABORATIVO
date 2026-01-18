@@ -18,6 +18,7 @@ public class Core {
     public int ingValor(byte min, byte max, String mensaje){
         Scanner sc;
         sc = new Scanner(System.in);
+        
         int n;
         n = 0;
         
