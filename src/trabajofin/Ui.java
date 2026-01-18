@@ -27,7 +27,7 @@ public class Ui {
         int i; 
 
         for(i=0; i<productos.length; i++) {
-            System.out.println(productos[i].Getmarca() + " " + productos[i].Getprecio());
+            System.out.println(productos[i].getMarca() + " " + productos[i].getPrecio());
 
         }
         System.out.println("El total a pagar es: " + total);
